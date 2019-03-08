@@ -1,9 +1,9 @@
---TODO: Commenting! 
+--TODO : Commenting!
 --	Add a craft recipe
-	--Reduce range, and radius
-	--Remove snow since I don't need it anymore
-	--Check for player protection, and nodes in 
-	--spawning area (Possible solution, change it from a circle to a square, 
+--Reduce range, and radius
+--	Remove snow since I don't need it anymore
+--	Check for player protection, and nodes in
+--	spawning area (Possible solution, change it from a circle to a square,
 	--but check for air nodes first?
 minetest.register_tool("snow_staff:snow_staff", {
         description = "Snow Staff",
