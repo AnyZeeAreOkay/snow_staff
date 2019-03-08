@@ -1,3 +1,8 @@
+[[--TODO: Commenting! 
+	Add a craft recipe
+	Reduce range, and radius
+	Remove snow since I don't need it anymore
+--]]
 minetest.register_node("snow_staff:snow", {
 	description = "Snow",
 	tiles = {"default_snow.png"},
@@ -20,18 +25,6 @@ minetest.register_node("snow_staff:snow", {
 		},
 	},
 	groups = {crumbly = 3, falling_node = 1, snowy = 1, cools_lava = 1},
-
-  on_timer = function(pos)
-    local mypos = minetest.pos_to_string(pos)
-    local pos = {x = pos.x, y = pos.y-20, z = pos.z}
-    local radius = 30
-    local nodes, count = minetest.find_nodes_in_area({x=pos.x-radius,y=pos.y-5,z=pos.z-radius},{x=pos.x+radius,y=pos.y+radius,z=pos.z+radius}, "snow_staff")
-    for i in pairs(nodes) do
-      minetest.set_node(nodes[i], {name = "default:air"})
-    return true
-
-    end
-  end
 }
 )
 
