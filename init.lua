@@ -1,4 +1,4 @@
---TODO : Commenting!
+--TODO :
 --	Add a craft recipe
 --	Reduce radius
 --	Remove snow since I don't need it anymore
